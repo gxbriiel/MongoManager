@@ -15,12 +15,12 @@ public class UpdateData {
         );
 
         //Set the update object
-        DBObject updatedObject = mongo.read("uuid", "65783c41-af8d-439c-a750-f584c130760a666666666");
+        DBObject updatedObject = mongo.read("uuid", "65783c41-af8d-439c-a750-f584c130760a");
         updatedObject.put("mysteryboxes", 4);
         updatedObject.put("terrains", 6);
 
         //Update the object
-        mongo.update("uuid", "65783c41-af8d-439c-a750-f584c130760a666666666", updatedObject);
+        mongo.update("uuid", "65783c41-af8d-439c-a750-f584c130760a", updatedObject);
 
         //Closes the connection to avoid lagging
         mongo.close();
