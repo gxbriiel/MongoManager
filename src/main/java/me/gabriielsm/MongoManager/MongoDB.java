@@ -4,6 +4,11 @@ import com.mongodb.*;
 
 import java.net.UnknownHostException;
 
+/**
+ * @author Gabriielsm
+ * @author Gabriiel#1212
+ * @version 1.0
+ */
 public class MongoDB {
 
     private MongoClient client;
@@ -11,9 +16,9 @@ public class MongoDB {
     private DBCollection collection;
 
     /**
-     * <h2>This constructor creates a connection to a me.gabriielsm.MongoManager.MongoDB server, with a database and collection defined</h2>
-     * @param uriString <p>the uri of the me.gabriielsm.MongoManager.MongoDB server</p>
-     * @param databaseName <p>the name of the database of me.gabriielsm.MongoManager.MongoDB server</p>
+     * <h2>This constructor creates a connection to a MongoDB server, with a database and collection defined</h2>
+     * @param uriString <p>the uri of the MongoDB server</p>
+     * @param databaseName <p>the name of the database of MongoDB server</p>
      * @param collectionName <p>the name of the collection that is inside the database</p>
      */
     public MongoDB(String uriString, String databaseName, String collectionName) {
@@ -31,14 +36,14 @@ public class MongoDB {
     }
 
     /**
-     * <h2>This method closes the connection with the me.gabriielsm.MongoManager.MongoDB server</h2>
+     * <h2>This method closes the connection with the MongoDB server</h2>
      */
     public void close() {
         this.client.close();
     }
 
     /**
-     * <h2>This method get the current connection with the me.gabriielsm.MongoManager.MongoDB server and return it</h2>
+     * <h2>This method get the current connection with the MongoDB server and return it</h2>
      * @return MongoClient
      */
     public MongoClient getMongoClient() {
@@ -46,7 +51,7 @@ public class MongoDB {
     }
 
     /**
-     * <h2>This method changes the database, consequently the collection that is used by me.gabriielsm.MongoManager.MongoDB client</h2>
+     * <h2>This method changes the database, consequently the collection that is used by MongoDB client</h2>
      * @param databaseName <p>the name of another database</p>
      * @param collectionName <p>the name of the collection inside the changed database</p>
      */
@@ -64,7 +69,7 @@ public class MongoDB {
     }
 
     /**
-     * <h2>Search for a key and value and returns it as a me.gabriielsm.MongoManager.MongoDB object</h2>
+     * <h2>Search for a key and value and returns it as a MongoDB object</h2>
      * @param key <p>the key of the object to be searched</p>
      * @param value <p>the value of the object should have</p>
      * @return DBObject
