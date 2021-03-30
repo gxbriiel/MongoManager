@@ -1,12 +1,12 @@
 ## MongoManager
 ### _A simple way to use MongoDB driver with Java_
 
-MongoManager is a simple way to integrate your MongoDB server with you Java Application with less stress to make it work.
+MongoManager is a simple way to integrate your MongoDB server with your Java Application with less stress to make it work.
 
 ## Features
 
 - [All methods documentated](https://github.com/Gabriielsm/MongoManager/blob/main/src/main/java/me/gabriielsm/MongoManager/MongoDB.java)
-- [Commented examples](https://github.com/Gabriielsm/MongoManager/tree/main/src/main/java/me/gabriielsm/examples) to learn how to use
+- [Commented examples](https://github.com/Gabriielsm/MongoManager/tree/main/src/main/java/me/gabriielsm/examples) to learn how to use it
 - Don't need to have much knowledge to understand the use it
  
 ## Installation
