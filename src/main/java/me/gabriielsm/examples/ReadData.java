@@ -15,7 +15,7 @@ public class ReadData {
         );
 
         //Reads the player and return the DBObject
-        DBObject player = mongo.read("uuid", "65783c41-af8d-439c-a750-f584c130760a666666666");
+        DBObject player = mongo.read("uuid", "65783c41-af8d-439c-a750-f584c130760a");
 
         //Closes the connection to avoid lagging
         mongo.close();
