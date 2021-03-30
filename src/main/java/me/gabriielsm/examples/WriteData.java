@@ -18,7 +18,7 @@ public class WriteData {
         );
 
         //Creates a MongoDB object based on <key, value>
-        DBObject object = new BasicDBObject("uuid", "65783c41-af8d-439c-a750-f584c130760a666666666");
+        DBObject object = new BasicDBObject("uuid", "65783c41-af8d-439c-a750-f584c130760a");
 
         //Adds another object based on <key, value> to the principal MongoDB object
         object.put("nickname", "GabriielPlayer");
